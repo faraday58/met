@@ -6,4 +6,5 @@
     <string name="strEdtCorreo" translatable="false">Email</string>
     <string name="strEdtNombre" translatable="false">Name</string>
     <string name="strTvCreaCuenta">Create Account</string>
+    <string name="strTxtvBienvenido">Welcome</string>
 </resources>
