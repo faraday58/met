@@ -9,28 +9,28 @@
 
     <TextView
         android:id="@+id/textView"
-        android:textColor="@color/colorAccent"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="108dp"
+        android:layout_marginLeft="96dp"
         android:text="@string/strTvCreaCuenta"
+        android:textColor="@color/colorText"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <EditText
         android:id="@+id/edtNombre"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="76dp"
         android:hint="@string/strEdtNombre"
         android:inputType="textPersonName"
         android:textColor="@color/colorAccent"
-        android:textColorHint="@color/colorPrimary"
+        android:textColorHint="@color/colorDivider"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -39,8 +39,8 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:textColorHint="@color/colorPrimary"
-        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorDivider"
+        android:textColor="@color/colorText"
         android:hint="@string/strEdtCorreo"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,26 +53,41 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:textColorHint="@color/colorPrimary"
-        android:textColor="@color/colorAccent"
-        android:inputType="textPassword"
         android:hint="@string/strEdtContraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtCorreo" />
+        app:layout_constraintTop_toBottomOf="@id/edtCorreo"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorAccent"
+        android:text="@string/strBtnCrear"
+        android:textColor="@color/colorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtContraseña" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnCrear"
-        android:layout_marginTop="50dp"
-        android:text="@string/strEdtCrear"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginTop="48dp"
+        android:text="@string/strBtnIngresar"
+        android:textColor="@color/colorSecunDaryText"
+        android:textColorLink="@color/lightPrimaryText"
+        app:layout_constraintEnd_toStartOf="@+id/btnCrear"
+        app:layout_constraintHorizontal_bias="0.669"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtContraseña"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/edtContraseña" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@
     <string name="strEdtNombre">Nombre</string>
     <string name="strEdtCorreo">Correo</string>
     <string name="strEdtContraseña">Constraseña</string>
-    <string name="strEdtCrear">Crear</string>
+    <string name="strBtnCrear">Crear</string>
+    <string name="strBtnIngresar">Ingresar</string>
 
 </resources>
