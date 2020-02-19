@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strBtnCrear" translatable="false">Sign up</string>
+    <string name="strBtnIngresar" translatable="false">Sign in</string>
+    <string name="strEdtContraseña" translatable="false">Password</string>
+    <string name="strEdtCorreo" translatable="false">Email</string>
+    <string name="strEdtNombre" translatable="false">Name</string>
+    <string name="strTvCreaCuenta">Create Account</string>
+</resources>

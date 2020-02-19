@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Metc</string>
+    <string name="app_name" translatable="false">Metc</string>
     <string name="strTvCreaCuenta">Crea una Cuenta</string>
     <string name="strEdtNombre">Nombre</string>
     <string name="strEdtCorreo">Correo</string>
