@@ -1,8 +1,10 @@
-package com.temas.selectos.metc;
+package com.temas.selectos.metc.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.temas.selectos.metc.R;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

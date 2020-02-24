@@ -1,4 +1,4 @@
-package com.temas.selectos.metc;
+package com.temas.selectos.metc.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.temas.selectos.metc.R;
 
 public class RegistroActivity extends AppCompatActivity {
     Button btnCrear;
