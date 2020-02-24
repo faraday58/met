@@ -7,4 +7,8 @@
     <string name="strEdtNombre" translatable="false">Name</string>
     <string name="strTvCreaCuenta">Create Account</string>
     <string name="strTxtvBienvenido">Welcome</string>
+    <string name="nav_menu_inicio">Home</string>
+    <string name="nav_menu_buscar">Search</string>
+    <string name="nav_menu_car">Car</string>
+    <string name="nav_menu_inicia">Login o Sign Up</string>
 </resources>

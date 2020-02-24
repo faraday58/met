@@ -7,5 +7,10 @@
     <string name="strBtnCrear">Crear</string>
     <string name="strBtnIngresar">Ingresar</string>
     <string name="strTxtvBienvenido">Bienvenido</string>
+    <string name="nav_menu_inicio">Incio</string>
+    <string name="nav_menu_buscar">Buscar</string>
+    <string name="nav_menu_car">Carrito</string>
+    <string name="nav_menu_inicia">Comienza o Registra</string>
+
 
 </resources>

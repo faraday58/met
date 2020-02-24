@@ -1,6 +1,5 @@
 package com.temas.selectos.metc;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public  void onClickCrear(View v)
     {
-        Intent intentRegistro = new Intent(this,MainActivity.class);
+        Intent intentRegistro = new Intent(this, RegistroActivity.class);
         startActivity(intentRegistro);
 
     }
