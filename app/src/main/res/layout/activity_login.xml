@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:textColor="@color/colorText"
+        android:inputType="textEmailAddress"
         android:hint="@string/strEdtCorreo"
         android:textColorHint="@color/colorDivider"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +35,7 @@
     <EditText
         android:id="@+id/edtContraseñaLogin"
         android:layout_width="350dp"
+        android:inputType="textPassword"
         android:layout_height="wrap_content"
         android:textColor="@color/colorText"
         android:layout_marginTop="72dp"

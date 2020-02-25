@@ -2,6 +2,7 @@ package com.temas.selectos.metc.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -36,7 +37,7 @@ public class RegistroActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Nombre= edtNombre.getText().toString();
-                Contraseña= edtNombre.getText().toString();
+                Contraseña= edtContraseña.getText().toString();
                 Correo= edtCorreo.getText().toString();
 
                 if(Nombre.length() == 0)
@@ -54,6 +55,12 @@ public class RegistroActivity extends AppCompatActivity {
                 if( Nombre.length() !=0 && Contraseña.length() !=0 && Correo.length() !=0)
                 {
                     Toast.makeText(getApplicationContext(),"Se está registrando al usuario " + Nombre,Toast.LENGTH_LONG ).show();
+
+                    Intent intIngresar= new Intent(getApplicationContext(),LoginActivity.class);
+                    intIngresar.putExtra(getString(R.string.strEdtCorreo),Correo);
+                    intIngresar.putExtra(getString(R.string.strEdtContraseña),Contraseña);
+                    intIngresar.putExtra(getString(R.string.strEdtNombre),Nombre);
+                    startActivity(intIngresar);
                 }
 
             }
