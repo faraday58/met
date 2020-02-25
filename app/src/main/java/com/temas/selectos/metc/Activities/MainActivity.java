@@ -17,21 +17,23 @@ import com.temas.selectos.metc.R;
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView btmNavPrincipal;
-
+    Fragment fragmentSeleccionado;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        fragmentSeleccionado= new FragmentInicio();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContenedor,fragmentSeleccionado).commit();
         btmNavPrincipal = findViewById(R.id.btmNavPrincipal);
         btmNavPrincipal.setOnNavigationItemSelectedListener(navListener);
+
     }
 
     //Creando un objeto de escucha
     BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-            Fragment fragmentSeleccionado= null;
+
             switch (menuItem.getItemId())
             {
                 case R.id.nav_home:
