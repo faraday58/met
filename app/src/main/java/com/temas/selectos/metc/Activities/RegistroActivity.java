@@ -61,6 +61,7 @@ public class RegistroActivity extends AppCompatActivity {
                     intIngresar.putExtra(getString(R.string.strEdtContraseña),Contraseña);
                     intIngresar.putExtra(getString(R.string.strEdtNombre),Nombre);
                     startActivity(intIngresar);
+                    finish();
                 }
 
             }

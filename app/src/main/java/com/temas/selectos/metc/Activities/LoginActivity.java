@@ -37,11 +37,18 @@ public class LoginActivity extends AppCompatActivity {
         /*Obteniendo los parámetros
         de un activity
          */
-        Bundle extras= getIntent().getExtras();
-        correo = extras.getString(getString(R.string.strEdtCorreo));
-        contraseña = extras.getString(getString(R.string.strEdtContraseña));
-        nombre = extras.getString(getString(R.string.strEdtNombre));
-        btnIngresar.setOnClickListener(onClickIngresar);
+        try
+        {
+            Bundle extras= getIntent().getExtras();
+            correo = extras.getString(getString(R.string.strEdtCorreo));
+            contraseña = extras.getString(getString(R.string.strEdtContraseña));
+            nombre = extras.getString(getString(R.string.strEdtNombre));
+            btnIngresar.setOnClickListener(onClickIngresar);
+        }
+        catch (NullPointerException error)
+        {
+            Toast.makeText(this,getString(R.string.strMensajeRegistro),Toast.LENGTH_SHORT).show();
+        }
         //edtCorreo.setText(correo);
         //edtContraseña.setText(contraseña);
 
@@ -53,6 +60,7 @@ public class LoginActivity extends AppCompatActivity {
     {
         Intent intentRegistro = new Intent(this, RegistroActivity.class);
         startActivity(intentRegistro);
+        finish();
 
     }
 
@@ -60,7 +68,6 @@ public class LoginActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-
 
             //Toast.makeText(getApplicationContext(),correo +" "+ contraseña,Toast.LENGTH_SHORT).show();
             if(  edtCorreo.getText().toString().equals(correo) && edtContraseña.getText().toString().equals(contraseña)  )

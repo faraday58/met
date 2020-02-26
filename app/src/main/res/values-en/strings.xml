@@ -11,4 +11,5 @@
     <string name="nav_menu_buscar">Search</string>
     <string name="nav_menu_car">Car</string>
     <string name="nav_menu_inicia">Login o Sign Up</string>
+    <string name="strMensajeRegistro">You have to sign up</string>
 </resources>

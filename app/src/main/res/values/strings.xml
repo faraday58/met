@@ -11,6 +11,7 @@
     <string name="nav_menu_buscar">Buscar</string>
     <string name="nav_menu_car">Carrito</string>
     <string name="nav_menu_inicia">Comienza o Registra</string>
+    <string name="strMensajeRegistro">Debe regisrtrarse primero</string>
 
 
 </resources>
