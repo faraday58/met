@@ -22,6 +22,7 @@ public class FragmentInicio extends Fragment {
     ArrayList<MuestraProducto> muestras;
     private RecyclerView rcvListaProductos;
 
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -41,7 +42,7 @@ public class FragmentInicio extends Fragment {
 
     private  void IniciarAdaptador()
     {
-        AdaptadorMuestraProducto miAdaptador= new AdaptadorMuestraProducto(muestras);
+        AdaptadorMuestraProducto miAdaptador= new AdaptadorMuestraProducto(getActivity(),muestras);
         rcvListaProductos.setAdapter(miAdaptador);
     }
 

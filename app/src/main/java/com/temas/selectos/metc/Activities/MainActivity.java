@@ -12,9 +12,11 @@ import com.temas.selectos.metc.Activities.Fragments.FragmentBuscar;
 import com.temas.selectos.metc.Activities.Fragments.FragmentCarrito;
 import com.temas.selectos.metc.Activities.Fragments.FragmentInicio;
 import com.temas.selectos.metc.Activities.Fragments.FragmentLoginSign;
+import com.temas.selectos.metc.Activities.Fragments.ProductosFragment;
+import com.temas.selectos.metc.Activities.RecyclerViewMuestra.AdaptadorMuestraProducto;
 import com.temas.selectos.metc.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdaptadorMuestraProducto.IColecProduccion {
 
     BottomNavigationView btmNavPrincipal;
     Fragment fragmentSeleccionado;
@@ -55,4 +57,9 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    @Override
+    public void ClickProduccion(String Titulo) {
+        fragmentSeleccionado = new ProductosFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContenedor,fragmentSeleccionado).commit();
+    }
 }
