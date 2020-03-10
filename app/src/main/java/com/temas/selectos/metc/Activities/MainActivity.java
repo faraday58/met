@@ -59,10 +59,9 @@ public class MainActivity extends AppCompatActivity implements AdaptadorMuestraP
 
     @Override
     public void ClickProduccion(String Titulo) {
-        fragmentSeleccionado = new ProductosFragment();
+        fragmentSeleccionado = new ProductosFragment(Titulo);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContenedor,fragmentSeleccionado).commit();
-        ProductosFragment productosFragment =(ProductosFragment) fragmentSeleccionado;
-        productosFragment.SetTituloFrag(Titulo);
+
 
 
 
